@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-This project generates spoilers for clickbait contents. In this context, a spoiler is a short answer or disclosure that reveals the hidden information behind a clickbait headline, so that the reader does not need to open the article to satisfy the curiosity gap.
+This project generates spoilers for clickbait contents as part of a master's degree project at Vienna University of Economics and Business by Peter Podobni and Marie-Sophie Höller. In this context, a spoiler is a short answer or disclosure that reveals the hidden information behind a clickbait headline, so that the reader does not need to open the article to satisfy the curiosity gap.
 
 We use the Webis Clickbait Spoiling Corpus 2022 and compare three simple LLM prompting strategies.
 
