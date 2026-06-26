@@ -2,11 +2,11 @@
 
 ## Project Goal
 
-This project generates spoilers for clickbait contents. In this context, a spoiler is a short answer that reveals the hidden information behind a clickbait headline, so the reader does not need to open the article to satisfy the curiosity gap.
+This project generates spoilers for clickbait contents. In this context, a spoiler is a short answer or disclosure that reveals the hidden information behind a clickbait headline, so that the reader does not need to open the article to satisfy the curiosity gap.
 
 We use the Webis Clickbait Spoiling Corpus 2022 and compare three simple LLM prompting strategies.
 
-The project follows the SemEval-2023 clickbait spoiling task setup [[1]](https://doi.org/10.18653/v1/2023.semeval-1.312). Our main idea is to generate short spoilers that answer the curiosity gap in the headline while staying grounded in the article text.
+The project follows the SemEval-2023 clickbait spoiling task setup [[1]](https://doi.org/10.18653/v1/2023.semeval-1.312). Our main idea is to generate short spoilers that fill the curiosity gap in the headline while staying grounded in the article text.
 
 ## Dataset
 
@@ -116,7 +116,7 @@ The manual scores show a different picture from BERTScore. Direct generation is 
 
 ## Limitations
 
-This is a prompt-based generation project, not a fine-tuned spoiler model. The article context is truncated, so the answer can be missing if it appears later in the article. Multipart spoilers are harder because they often require several facts. BERTScore is useful for semantic similarity, but it does not fully check grounding or hallucination. The manual evaluation is also small, with 45 scored rows in the Excel workbook.
+This is a prompt-based generation project, not a fine-tuned spoiler model. The article context is truncated, so the answer can be missing if it appears later in the article. Multipart spoilers are more difficult as they often require several facts. BERTScore is useful for semantic similarity, but it does not fully check grounding or hallucination. The manual evaluation is small, with 45 scored rows in the Excel workbook.
 
 The LLM output depends on the WU Ollama endpoint, network access, and the selected run limit.
 
